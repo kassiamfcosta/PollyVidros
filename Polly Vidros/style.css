@@ -11,6 +11,7 @@ header{
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 h2{
@@ -70,17 +71,16 @@ nav {
 
 #hero {
     width: 100%;
-    height: 300;
+    height: 300px;
 }
 
 #servicos {
     width: 100%;
     height: 500px;
     display: grid;
-    grid-template-columns: 4 (1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 10vh 30vh 60vh;
     background-color: rgb(255, 255, 255);
-
 }
 
 ul{
@@ -112,8 +112,7 @@ ul{
 
 #pag-contato{
     width: 100%;
-    height: 440;
-    margin-left: 700px;
+    height: 440px;
     display: flex;
 }
 
@@ -122,12 +121,11 @@ ul{
 }
 
 @media screen and (max-width: 600px) {
-    pag-contato{
+    #pag-contato {
         display: grid;
-        grid-template-columns: (2, 1fr);
+        grid-template-columns: 1fr 1fr; /* Ajuste conforme necessário */
     }
 }
-
 
 /*pag-avaliações*/
 
