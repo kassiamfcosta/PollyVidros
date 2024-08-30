@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+header{
+    height: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: Alegreya Sans;
+    font-size: 40px;
+    color: #172847;
+}
+
+p{
+    font-family: Roboto;
+    font-weight: regular;
+    font-size: 20px;
+}
+
+#botao-whats {
+    width: 80px;
+    height: 80px;
+    position: fixed; /* Adicionei esta linha para fixar o botão na tela */
+    right: 20px;
+    bottom: 20px;
+    border-radius: 100px;
+    border: none; /* Removi a borda padrão do botão */
+    background: none; /* Removi o fundo padrão do botão */
+    padding: 0; /* Removi o padding padrão do botão */
+}
+
+#botao-whats img {
+    width: 100%; /* Ajusta a imagem para preencher o botão */
+    height: 100%;
+    border-radius: 35px; /* Garante que a imagem também tenha bordas arredondadas */
+}
+
+header {
+    height: 220px;
+}
+
+#nav-topo{
+    width: 100%;
+    height: 30px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+nav {
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+    background-color: aliceblue;
+    font-family: Roboto;
+}
+
+.menu {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#hero {
+    width: 100%;
+    height: 300;
+}
+
+#servicos {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 4 (1fr);
+    grid-template-rows: 10vh 30vh 60vh;
+    background-color: rgb(255, 255, 255);
+
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+
+.carousel-inner{
+    padding-left: 100px;
+}
+
+#container-sobre{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: #EAEAEA;
+}
+
+.img-sobre{
+
+}
+
+.txt-sobre{
+    width: 20%;
+    height: 70px;
+    text-align: center;
+}
+
+#pag-contato{
+    width: 100%;
+    height: 440;
+    margin-left: 700px;
+    display: flex;
+}
+
+#img-especialista{
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    pag-contato{
+        display: grid;
+        grid-template-columns: (2, 1fr);
+    }
+}
+
+
+/*pag-avaliações*/
+
+#produtos{
+    display: flex;
+}
+
+button{
+    align-items: center;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #172847;
+}
+
+.star2{
+    display: flex;
+}
+
+#pag-avaliacoes{
+    width: 100%;
+    height: 400px;
+    margin-right: 300px;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background-color: #EAEAEA;
+}
+
+
+/*pagcontato*/
+
+#container-contato{
+    display: flex;
+}
